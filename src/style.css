@@ -4,3 +4,8 @@
     src: url('./Poppins-Regular.woff2') format('woff2'),
     url('Poppins-Regular.woff') format('woff');
 }
+
+* {
+    font-family: 'Poppins-Regular';
+    font-size: 100px;
+}
