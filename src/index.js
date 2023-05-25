@@ -1,9 +1,9 @@
 import _ from 'lodash';
-import './style.css';
-import WebMenu from './website-menu.png'
-import printMe from './header.js'
+import initializeWebsite from "./website";
+import "./style.css";
 
-function component() {
+initializeWebsite();
+/*function component() {
     const element = document.createElement('div');
     const btn = document.createElement('button');
   
@@ -14,12 +14,8 @@ function component() {
     
     element.appendChild(btn);
     
-    const myIcon = new Image();
-    myIcon.src = WebMenu;
-    
-    element.appendChild(myIcon);
   
     return element;
   }
   
-  document.body.appendChild(component());
+  document.body.appendChild(component());*/

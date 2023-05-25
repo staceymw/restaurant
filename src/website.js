@@ -20,31 +20,34 @@ function createHeader() {
 
 function createNav() {
     const nav = document.createElement("nav");
-    const buttonWrapper = document.createElement("div");
+    const navList = document.createElement("ul");
+    const homeNav = document.createElement("li");
+    const menuNav = document.createElement("li");
+    const contactNav = document.createElement("li");
 
-    buttonWrapper.classList.add("nav-list");
+    navList.classList.add("nav-list");
     
-    const homeButton = document.createElement("button");
-    homeButton.classList.add("nav-items");
-    homeButton.textContent = "Home";
+    homeNav.classList.add("nav-items");
+    homeNav.textContent = "Home";
 
-    const menuButton = document.createElement("button");
-    menuButton.classList.add("nav-items");
-    menuButton.textContent = "Menu";
+    menuNav.classList.add("nav-items");
+    menuNav.textContent = "Menu";
 
-    const contactButton = document.createElement("button");
-    contactButton.classList.add("nav-items");
-    contactButton.textContent = "Contact";
+    contactNav.classList.add("nav-items");
+    contactNav.textContent = "Contact";
 
-    buttonWrapper.appendChild(homeButton);
-    buttonWrapper.appendChild(menuButton);
-    buttonWrapper.appendChild(contactButton);
-    nav.appendChild(buttonWrapper);
+    navList.appendChild(homeNav);
+    navList.appendChild(menuNav);
+    navList.appendChild(contactNav);
+    nav.appendChild(navList);
 
 
     return nav;
 }
 
+function addEventListener (element, event, handler) {
+    element.addEventListener(event, handler, false);
+}
 
 
 function initializeWebsite() {

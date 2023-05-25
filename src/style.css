@@ -1,11 +1,57 @@
 
 @font-face {
-    font-family: 'Poppins-Regular';
-    src: url('./Poppins-Regular.woff2') format('woff2'),
-    url('Poppins-Regular.woff') format('woff');
+    font-family: "TheGirlNextDoor-Regular";
+    src: url("./fonts/TheGirlNextDoor-Regular.woff2") format("woff2"),
+    url("./fonts/TheGirlNextDoor-Regular.woff") format("woff");
 }
 
-* {
-    font-family: 'Poppins-Regular';
-    font-size: 100px;
+@font-face {
+    font-family: "Quicksand-Regular";
+    src: url("./fonts/Quicksand-VariableFont_wght.woff2") format("woff2"),
+    url("./fonts/Quicksand-VariableFont_wght.woff") format("woff")
 }
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin: auto 16vw;
+    font-family: "Quicksand-Regular", sans-serif;
+    text-align: center;
+    color: rgb(51, 49, 49);
+    min-height: 100vh;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*border-bottom: 2px solid black;*/
+    height: 150px;
+  }
+  
+  .heading {
+    justify-self: center;
+    align-self: center;
+    font-family: "TheGirlNextDoor-Regular", sans-serif;
+  }
+  
+  .nav {
+    align-self: center;
+    justify-self: right;
+    
+  }
+  
+  .nav-list {
+    justify-self: center;
+    align-self: center;
+    list-style: none;
+    display: grid;
+    gap: 20px;
+  }
+  
+  .nav-items {
+    font-family: "Quicksand-Regular", sans-serif;
+    font-weight: bold;
+    text-align: right;
+}
+  
