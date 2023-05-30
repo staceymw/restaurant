@@ -1,6 +1,7 @@
 /*import loadHome from "./home";
 import loadMenu from "./menu";
 import loadContact from "./contact"*/
+import GitMark from "./imgs/github-mark/github-mark.png";
 
 function createHeader() {
     const header = document.createElement('div');
@@ -69,8 +70,6 @@ function createDivider() {
     return divider;
 }
 
-function createImage()
-
 function createMainContent() {
     const mainContent = document.createElement("div");
     mainContent.classList.add("main-content");
@@ -80,17 +79,20 @@ function createMainContent() {
 
 function createFooter() {
     const footer = document.createElement("footer");
-    const gihubImg = document.createElement('img');
+    const githubImg = document.createElement('img');
 
-    gihubImg.src = 
+    footer.classList.add("footer");
+
+    githubImg.src = GitMark;
+    githubImg.classList.add("github-img");
     
     footer.appendChild(createDivider());
     footer.appendChild(createParagraph("Website by Stacey Walden"));
+    footer.appendChild(githubImg);
+    footer.appendChild(createDivider());
 
 
-    
-    
-
+    return footer;
 }
 
 

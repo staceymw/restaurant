@@ -54,4 +54,25 @@ body {
     font-weight: bold;
     text-align: right;
 }
+
+hr {
+  border-top: 1px solid gray;
+  width: 90%;
+}
+
+
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.github-img {
+  justify-self: start;
+  align-self: center;
+  height: 20px;
+  width: 20px;
+}
   
