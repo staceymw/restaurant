@@ -1,5 +1,5 @@
-/*import loadHome from "./home";
-import loadMenu from "./menu";
+import loadHome from "./home";
+/*import loadMenu from "./menu";
 import loadContact from "./contact"*/
 import {addEventListener, createParagraph, createDivider} from "./utility";
 import GitMark from "./imgs/github-mark/github-mark.png";
@@ -57,6 +57,7 @@ function createNav() {
 
 function createMainContent() {
     const mainContent = document.createElement("div");
+    
     mainContent.classList.add("main-content");
 
     return mainContent;
@@ -91,6 +92,8 @@ function initializeWebsite() {
     content.appendChild(createMainContent());
     body.appendChild(content);
     body.appendChild(createFooter());
+
+    loadHome();
 }
 
 export default initializeWebsite

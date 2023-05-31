@@ -75,4 +75,18 @@ hr {
   height: 20px;
   width: 20px;
 }
+
+.img-container {
+  display: grid;
+  align-self: center;
+  justify-self: center;
+}
+
+.img {
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
   
