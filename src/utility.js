@@ -14,4 +14,19 @@ function createDivider() {
     return divider;
 }
 
-export {addEventListener, createParagraph, createDivider};
+function createH2(text, className) {
+    const h2 = document.createElement("h2");
+    h2.classList.add(className);
+    h2.textContent = text;
+
+    return h2;
+}
+
+function createContainer(className) {
+    const container = document.createElement("div");
+    container.classList.add(className);
+
+    return container;
+}
+
+export {addEventListener, createParagraph, createDivider, createH2, createContainer};
