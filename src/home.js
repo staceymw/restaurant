@@ -4,13 +4,13 @@ import { createDivider, createParagraph, createContainer, createH2 } from "./uti
 
 function createHome() {
     const home = document.createElement('div');
-    home.classList.add("home");
-    
     const restaurantImgContainer = addRestaurantImg();
     const restaurantInfoContainer = addRestaurantInfo();
     const businessInfoContainer = addBusinessInfo();
     const chefImgContainer = addChefImg();
     const chefInfoContainer = addChefInfo();
+
+    home.classList.add("home");
 
     home.appendChild(restaurantImgContainer);
     home.appendChild(createDivider());
@@ -65,19 +65,20 @@ function addBusinessInfo() {
     hoursHeading.textContent = "Business Hours";
 
     const hoursWeekday = "Mon-Wed 8am-10pm";
-    const hoursThur = "CLOSED";
+    const hoursThur = "Thur CLOSED";
+    const hoursFri = "Fri 8am-10pm";
     const hoursWeekend = "Sat-Sun 7am-11pm";
 
-    const locationHeading = "Location";
+    const locationHeading = "Location"; 
     const locationClass = "location-heading";
-    const locationInfo = "3355 Oakville Place";
+    const locationInfo = "3355 Oakville Place"; 
     const locationInfo2 = "Anywhere Valley. NH";
     const locationInfo3 = "00000";
 
     businessInfoContainer.appendChild(hoursHeading);
     businessInfoContainer.appendChild(createParagraph(hoursWeekday));
     businessInfoContainer.appendChild(createParagraph(hoursThur));
-    businessInfoContainer.appendChild(createParagraph(hoursWeekday));
+    businessInfoContainer.appendChild(createParagraph(hoursFri));
     businessInfoContainer.appendChild(createParagraph(hoursWeekend));
     businessInfoContainer.appendChild(createH2(locationHeading, locationClass));
     businessInfoContainer.appendChild(createParagraph(locationInfo));

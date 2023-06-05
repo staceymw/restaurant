@@ -29,4 +29,15 @@ function createContainer(className) {
     return container;
 }
 
+function makeNavActive(item) {
+    const navItem = document.querySelectorAll(".nav-items");
+
+    navItem.forEach((item) => {
+        if(item !== this) {
+            item.classList.remove(".nav-items");
+        }
+    });
+    item.classList.add(".active-nav-item");
+}
+
 export {addEventListener, createParagraph, createDivider, createH2, createContainer};
