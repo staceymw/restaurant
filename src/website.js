@@ -1,4 +1,5 @@
 import loadHome from "./home";
+import loadMenu from "./menu"
 /*import loadMenu from "./menu";
 import loadContact from "./contact"*/
 import {addEventListener, createParagraph, createDivider} from "./utility";
@@ -47,9 +48,9 @@ function createNav() {
     navList.appendChild(contactNav);
     nav.appendChild(navList);
 
-    /*addEventListener(homeNav, "click", loadHome);
+    //addEventListener(homeNav, "click", loadHome);
     addEventListener(menuNav, "click", loadMenu);
-    addEventListener(contactNav, "click", loadContact);*/
+    //addEventListener(contactNav, "click", loadContact);
 
 
     return nav;
@@ -57,7 +58,7 @@ function createNav() {
 
 function createMainContent() {
     const mainContent = document.createElement("div");
-    
+
     mainContent.classList.add("main-content");
 
     return mainContent;
