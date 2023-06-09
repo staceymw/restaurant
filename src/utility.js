@@ -29,7 +29,7 @@ function createContainer(className) {
     return container;
 }
 
-function makeNavActive(item) {
+/*function makeNavActive(item) {
     const navItem = document.querySelectorAll(".nav-items");
 
     navItem.forEach((item) => {
@@ -38,6 +38,17 @@ function makeNavActive(item) {
         }
     });
     item.classList.add(".active-nav-item");
+}*/
+
+function createImg(src, className, alt) {
+    const imgContainer = document.createElement("div");
+    const img = document.createElement("img");
+
+    img.src = src;
+    img.classList.add(className);
+    img.alt = alt;
+
+    imgContainer.appendChild(img);
 }
 
-export {addEventListener, createParagraph, createDivider, createH2, createContainer};
+export {addEventListener, createParagraph, createDivider, createH2, createContainer, createImg};
