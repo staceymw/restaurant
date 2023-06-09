@@ -48,7 +48,7 @@ function createNav() {
     navList.appendChild(contactNav);
     nav.appendChild(navList);
 
-    //addEventListener(homeNav, "click", loadHome);
+    addEventListener(homeNav, "click", loadHome);
     addEventListener(menuNav, "click", loadMenu);
     //addEventListener(contactNav, "click", loadContact);
 
