@@ -1,5 +1,5 @@
 function addEventListener (element, event, handler) {
-    element.addEventListener(event, handler, false);
+    element.addEventListener(event, handler,false);
 }
 
 function createParagraph(text) {
@@ -29,16 +29,6 @@ function createContainer(className) {
     return container;
 }
 
-/*function makeNavActive(item) {
-    const navItem = document.querySelectorAll(".nav-items");
-
-    navItem.forEach((item) => {
-        if(item !== this) {
-            item.classList.remove(".nav-items");
-        }
-    });
-    item.classList.add(".active-nav-item");
-}*/
 
 function createImg(src, className, alt) {
     const imgContainer = document.createElement("div");
