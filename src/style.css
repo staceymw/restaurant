@@ -119,3 +119,12 @@ hr {
 .menu-img {
   max-width: 40%;
 }
+
+.contact-info {
+  font-weight: bold;
+}
+
+.contact-info-heading {
+  text-decoration: underline;
+}
+

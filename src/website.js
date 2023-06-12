@@ -1,7 +1,6 @@
 import loadHome from "./home";
 import loadMenu from "./menu"
-/*import loadMenu from "./menu";
-import loadContact from "./contact"*/
+import loadContact from "./contact"
 import {addEventListener, createParagraph, createDivider} from "./utility";
 import GitMark from "./imgs/github-mark/github-mark.png";
 
@@ -35,12 +34,15 @@ function createNav() {
     navList.classList.add("nav-list");
     
     homeNav.classList.add("nav-items");
+    homeNav.setAttribute("id", "nav1");
     homeNav.textContent = "Home";
 
     menuNav.classList.add("nav-items");
+    contactNav.setAttribute("id", "nav2")
     menuNav.textContent = "Menu";
 
     contactNav.classList.add("nav-items");
+    contactNav.setAttribute("id", "nav3");
     contactNav.textContent = "Contact";
 
     navList.appendChild(homeNav);
@@ -50,7 +52,7 @@ function createNav() {
 
     addEventListener(homeNav, "click", loadHome);
     addEventListener(menuNav, "click", loadMenu);
-    //addEventListener(contactNav, "click", loadContact);
+    addEventListener(contactNav, "click", loadContact);
 
 
     return nav;
