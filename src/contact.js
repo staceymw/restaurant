@@ -2,8 +2,6 @@ import { add } from "lodash";
 import { createH2, createParagraph, createContainer } from "./utility";
 
 function createContact() {
-    const navItem = document.getElementById(nav3);
-    console.log(nav3);
     const mainContentArr = document.getElementsByClassName("main-content");
     const mainContent = mainContentArr[0];
     const contactContainer = createContainer("contact-container");
