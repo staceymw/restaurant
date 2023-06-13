@@ -54,7 +54,6 @@ function createMenu() {
     return menu;
 }
 
-
 function loadMenu() {
     const mainContentArr = document.getElementsByClassName("main-content");
     const mainContent = mainContentArr[0];

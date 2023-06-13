@@ -15,8 +15,6 @@ function createHeader() {
     heading.classList.add("heading");
     heading.textContent = "Beiko's Bakery";
 
-    
-
     header.appendChild(emptyDiv);
     header.appendChild(heading);
     header.appendChild(createNav());
@@ -42,7 +40,6 @@ function createNav() {
         loadHome();
     });
     
-
     menuNav.classList.add("nav-items");
     contactNav.setAttribute("id", "nav2")
     menuNav.textContent = "Menu";
@@ -65,11 +62,6 @@ function createNav() {
     navList.appendChild(menuNav);
     navList.appendChild(contactNav);
     nav.appendChild(navList);
-
-    addEventListener(homeNav, "click", loadHome);
-    addEventListener(menuNav, "click", loadMenu);
-    //addEventListener(contactNav, "click", loadContact);
-
 
     return nav;
 }
@@ -96,10 +88,8 @@ function createFooter() {
     footer.appendChild(githubImg);
     footer.appendChild(createDivider());
 
-
     return footer;
 }
-
 
 function initializeWebsite() {
     const body = document.getElementsByTagName("body")[0];
@@ -115,4 +105,4 @@ function initializeWebsite() {
     loadHome();
 }
 
-export default initializeWebsite
+export default initializeWebsite;
