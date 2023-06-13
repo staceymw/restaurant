@@ -1,11 +1,20 @@
 import { add } from "lodash";
-import { createH2, createParagraph, createContainer } from "./utility";
+import { createH2, createParagraph, createContainer, setActiveNav } from "./utility";
 
 function createContact() {
+    const contactButton = document.getElementById("nav3");
     const mainContentArr = document.getElementsByClassName("main-content");
     const mainContent = mainContentArr[0];
     const contactContainer = createContainer("contact-container");
     const contactHeading = document.createElement("h1");
+
+    contactButton.addEventListener("click", (e) => {
+        if (e.target.classList.contains("active")) return;
+        setActiveNav(contactButton);
+        loadContact();
+    });
+
+    contactHeading.classList.add("contact-heading");
 
     const phoneHeading = createH2("Phone Number", "contact-info-heading");
     const phoneNumber = createParagraph("555-123-4567");

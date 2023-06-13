@@ -1,7 +1,7 @@
 import loadHome from "./home";
 import loadMenu from "./menu"
 import loadContact from "./contact"
-import {addEventListener, createParagraph, createDivider} from "./utility";
+import {addEventListener, createParagraph, createDivider, setActiveNav} from "./utility";
 import GitMark from "./imgs/github-mark/github-mark.png";
 
 function createHeader() {
@@ -36,14 +36,30 @@ function createNav() {
     homeNav.classList.add("nav-items");
     homeNav.setAttribute("id", "nav1");
     homeNav.textContent = "Home";
+    homeNav.addEventListener("click", (e) => {
+        if (e.target.classList.contains("active")) return;
+        setActiveNav(homeNav);
+        loadHome();
+    });
+    
 
     menuNav.classList.add("nav-items");
     contactNav.setAttribute("id", "nav2")
     menuNav.textContent = "Menu";
+    menuNav.addEventListener("click", (e) => {
+        if (e.target.classList.contains("active")) return;
+        setActiveNav(menuNav);
+        loadMenu();
+    });
 
     contactNav.classList.add("nav-items");
     contactNav.setAttribute("id", "nav3");
     contactNav.textContent = "Contact";
+    contactNav.addEventListener("click", (e) => {
+        if (e.target.classList.contains("active")) return;
+        setActiveNav(contactNav);
+        loadContact();
+    });
 
     navList.appendChild(homeNav);
     navList.appendChild(menuNav);
@@ -52,7 +68,7 @@ function createNav() {
 
     addEventListener(homeNav, "click", loadHome);
     addEventListener(menuNav, "click", loadMenu);
-    addEventListener(contactNav, "click", loadContact);
+    //addEventListener(contactNav, "click", loadContact);
 
 
     return nav;

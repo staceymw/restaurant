@@ -29,6 +29,17 @@ function createContainer(className) {
     return container;
 }
 
+function setActiveNav(navItem) {
+    const navItems = document.querySelectorAll(".nav-items");
+
+    navItems.forEach((navItem) => {
+        if (navItem !== this) {
+            navItem.classList.remove("active-nav-item");
+        }
+    });
+
+    navItem.classList.add("active-nav-item");
+}
 
 function createImg(src, className, alt) {
     const imgContainer = document.createElement("div");
@@ -41,4 +52,4 @@ function createImg(src, className, alt) {
     imgContainer.appendChild(img);
 }
 
-export {addEventListener, createParagraph, createDivider, createH2, createContainer, createImg};
+export {addEventListener, createParagraph, createDivider, createH2, createContainer, createImg, setActiveNav};
