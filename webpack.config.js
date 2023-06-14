@@ -5,7 +5,11 @@ module.exports = {
   mode: 'production',
   entry: {
     index: './src/index.js',
-    website: './src/website.js'
+    website: './src/website.js',
+    home: './src/home.js',
+    menu: './src/menu.js',
+    contact: './src/contact.js',
+    utility: './src/utility'
   },
   devtool: 'inline-source-map',
   devServer: {
