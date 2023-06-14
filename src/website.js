@@ -1,7 +1,7 @@
 import loadHome from "./home";
 import loadMenu from "./menu"
 import loadContact from "./contact"
-import {addEventListener, createParagraph, createDivider, setActiveNav} from "./utility";
+import {createParagraph, createDivider, setActiveNav} from "./utility";
 import GitMark from "./imgs/github-mark/github-mark.png";
 
 function createHeader() {
@@ -102,6 +102,7 @@ function initializeWebsite() {
     body.appendChild(content);
     body.appendChild(createFooter());
 
+    setActiveNav(document.getElementById("nav1"));
     loadHome();
 }
 

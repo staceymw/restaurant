@@ -107,6 +107,7 @@ hr {
 
 .menu-heading, .contact-heading {
   text-decoration: underline;
+  margin-bottom: 50px;
 }
 
 .menu {

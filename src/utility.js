@@ -1,7 +1,3 @@
-function addEventListener (element, event, handler) {
-    element.addEventListener(event, handler,false);
-}
-
 function createParagraph(text) {
     const paragraph = document.createElement("p");
     paragraph.textContent = text;

@@ -1,8 +1,7 @@
 import { add } from "lodash";
-import { createH2, createParagraph, createContainer, setActiveNav } from "./utility";
+import { createH2, createParagraph, createContainer} from "./utility";
 
 function createContact() {
-    const contactButton = document.getElementById("nav3");
     const mainContentArr = document.getElementsByClassName("main-content");
     const mainContent = mainContentArr[0];
     const contactContainer = createContainer("contact-container");
@@ -17,7 +16,7 @@ function createContact() {
     const address3 = createParagraph("00000");
     
     const emailHeading = createH2("Email", "contact-info-heading");
-    const emailInstruction = createParagraph("Send large orfer requests to:");
+    const emailInstruction = createParagraph("Send large order requests to:");
     const emailAddress = createParagraph("hello@beikosbakery.com");
     
     contactHeading.classList.add("contact-heading");
