@@ -48,4 +48,4 @@ function createImg(src, className, alt) {
     imgContainer.appendChild(img);
 }
 
-export {addEventListener, createParagraph, createDivider, createH2, createContainer, createImg, setActiveNav};
+export {createParagraph, createDivider, createH2, createContainer, createImg, setActiveNav};
