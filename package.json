@@ -2,24 +2,18 @@
   "name": "restaurant",
   "version": "1.0.0",
   "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --watch",
+    "watch": "webpack --progress --watch",
     "start": "webpack serve --open",
-    "build": "webpack"
+    "build": "webpack --progress --mode=production"
   },
   "keywords": [],
-  "author": "",
+  "author": "Stacey Walden",
   "license": "ISC",
   "devDependencies": {
-    "css-loader": "^6.7.3",
-    "html-webpack-plugin": "^5.5.1",
-    "style-loader": "^3.3.2",
     "webpack": "^5.82.1",
-    "webpack-cli": "^5.1.1",
-    "webpack-dev-server": "^4.15.0"
-  },
-  "dependencies": {
-    "lodash": "^4.17.21"
+    "webpack-cli": "^5.1.1"
   }
 }
